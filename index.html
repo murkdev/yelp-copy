@@ -4,13 +4,14 @@
 <head>
   <meta charset="utf-8">
   <title>Yelp</title>
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/layout.css">
   <meta name=viewport content="width=device-width, initial-scale=1">
 </head>
 
 <body>
   <header>
-    <nav class="wrapper">
+    <div class="wrapper">
+    <nav>
       <ul>
         <li><a href="#">Write a Review</a></li>
         <li><a href="#">Events</a></li>
@@ -23,7 +24,7 @@
       </ul>
     </nav>
 
-    <div class="inner wrapper">
+    <div class="inner">
       <a href="#"><img class="center" src="img/logo.png"></a>
 
       <div class="search_flex">
@@ -33,17 +34,21 @@
         <input type="text" name="near" placeholder="San Francisco, CA">
         <button type="submit" name="search"><img src="img/new/search1.png"></button>
       </div>
+      <div class="categories">
       <ul>
-        <li>Restaurants</li>
-        <li>Delivery</li>
-        <li>Reservation</li>
-        <li>Nightlife</li>
+        <li><a href="#">Restaurants</a></li>
+        <li><a href="#">Delivery</a></li>
+        <li><a href="#">Reservations</a></li>
+        <li><a href="#">Nightlife</a></li>
       </ul>
     </div>
+    </div>
+  </div>
   </header>
 
-  <section>
+  <section class="wrapper">
     <h2>Yelp San Francisco</h2>
+    <div class="categories">
     <ul>
       <li><a href="#">New York</a></li>
       <li><a href="#">San Jose</a></li>
@@ -51,32 +56,31 @@
       <li><a href="#">Chicago</a></li>
       <li><a href="#">Palo Alto</a></li>
       <li><a href="#">Oakland</a></li>
-      <li><img src="img/new/search.png"><a href="#">More Cities</a></li>
+      <li><a href="#">More Cities</a></li>
     </ul>
-    <div class="hot">
+  </div>
       <h3>Hot & New Businesses</h3>
-
+<div class="hot">
       <div class="card">
-        <img src="img/new/1.jpg">
+        <a href="#"><img src="img/new/1.jpg"></a>
         <div class="cardcontent">
           <a href="#">
             <p>ABC Falafel</p>
           </a>
-          <span class="rating">★★★★☆</span><span class="review">15 reviews</span>
+          <span>★★★★☆</span><span class="review">15 reviews</span>
           <p>$ • Falafel, Desserts, Coffee & Tea</p>
           <p>Lower Pacific Heights</p>
           <img src="img/new/flame.png"><span>Opened 7 weeks ago</span>
         </div>
       </div>
-    </div>
 
     <div class="card">
-      <img src="img/new/2.jpg">
+      <a href="#"><img src="img/new/2.jpg"></a>
       <div class="cardcontent">
         <a href="#">
           <p>Dumpling Time</p>
         </a>
-        <span class="rating">★★★★☆</span><span class="review">126 reviews</span>
+        <span>★★★★☆</span><span class="review">126 reviews</span>
         <p>$$ • Dim Sum</p>
         <p>SoMa</p>
         <img src="img/new/flame.png"><span>Opened 7 weeks ago</span>
@@ -84,87 +88,83 @@
     </div>
 
     <div class="card">
-      <img src="img/new/3.jpg">
+      <a href="#"><img src="img/new/3.jpg"></a>
       <div class="cardcontent">
         <a href="#">
           <p>Parker Cafe</p>
         </a>
-        <span class="rating">★★★★★</span><span class="review">19 reviews</span>
+        <span>★★★★★</span><span class="review">19 reviews</span>
         <p>$ • Cafes, Salad</p>
         <p>Potrero Hill</p>
         <img src="img/new/flame.png"><span>Opened 3 weeks ago</span>
       </div>
     </div>
-    <a href="#">See more hot and new businesses</a>
+  </div>
+    <a id="more" href="#"><p>See more hot and new businesses</p></a>
   </section>
-  <section>
-    <h2>Browse Businesses by Category</h2>
-    <div class="categories">
-      <div class="firstrow">
 
-        <div class="card">
+  <section class="category_sec">
+    <div class="wrapper">
+    <h2>Browse Businesses by Category</h2>
+    <div class="browse_categories">
+
+        <div class="category">
           <a href="#">
 <img src="img/categories/restaurants.png">
 <p>Restaurants</p>
   </a>
         </div>
 
-        <div class="card">
+        <div class="category">
           <a href="#">
 <img src="img/categories/shopping.png">
 <p>Shopping</p>
-  </a>
+</a>
         </div>
 
-        <div class="card">
+        <div class="category">
           <a href="#">
 <img src="img/categories/nightlife.png">
 <p>Nighlife</p>
   </a>
         </div>
 
-        <div class="card">
+        <div class="category">
           <a href="#">
 <img src="img/categories/active_life.png">
 <p>Active life</p>
   </a>
         </div>
 
-      </div>
-
-      <div class="secondrow">
-
-        <div class="card">
+        <div class="category">
           <a href="#">
   <img src="img/categories/beauty.png">
   <p>Beauty & Spas</p>
     </a>
         </div>
 
-        <div class="card">
+        <div class="category">
           <a href="#">
   <img src="img/categories/automotive.png">
   <p>Automotive</p>
     </a>
         </div>
 
-        <div class="card">
+        <div class="category">
           <a href="#">
   <img src="img/categories/home_services.png">
   <p>Home Services</p>
     </a>
         </div>
 
-        <div class="card">
+        <div class="category">
           <a href="#">
   <img src="img/categories/more.png">
   <p>More Categories</p>
     </a>
         </div>
-
-      </div>
     </div>
+  </div>
   </section>
 </body>
-
 </html>
